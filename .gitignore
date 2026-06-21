@@ -1,0 +1,43 @@
+# ─── Secrets & environment ───────────────────────────────
+# Never commit credentials, API keys, or tokens.
+.env
+.env.*
+*.local
+*.pem
+*.key
+secrets.json
+
+# ─── Dependencies & build output (for when this grows) ────
+node_modules/
+dist/
+build/
+.cache/
+.wrangler/
+
+# ─── Logs ────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── OS cruft ────────────────────────────────────────────
+# Windows
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+# macOS (in case you ever work from another machine)
+.DS_Store
+.AppleDouble
+
+# ─── Editor / IDE ────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+
+# ─── Notes ───────────────────────────────────────────────
+# Working scratch files you don't want published. Anything you
+# drop in a /scratch/ folder stays local.
+scratch/
+*.tmp
